@@ -1,0 +1,134 @@
+/* Basic Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins: 400, 500, 700');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container .top {
+    background-color: rgb(25, 150, 220);
+    flex: 1;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.container .bottom {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    flex: 3;
+}
+
+.bottom .list {
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin: 13px 0;
+    align-self: flex-start;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.item .text {
+    font-size: 1.5em;
+}
+
+.item .delete {
+    background-color: rgb(241, 49, 49);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 8px;
+    align-self: flex-start;
+}
+
+.item .delete:hover {
+    background-color: rgb(160, 32, 32);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bottom .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field .add-item {
+    width: 300px;
+    font-size: 1.3em;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.field .add-item:focus {
+    border: 1px solid black;
+}
+
+.field .add-button {
+    font-size: 1.3em;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(25, 150, 220);
+    border: 1px solid rgb(25, 150, 220);
+    color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.field .add-button:hover {
+    cursor: pointer;
+    background-color: rgb(16, 91, 134);
+    border: 1px solid rgb(16, 91, 134);
+}
